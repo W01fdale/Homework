@@ -1,20 +1,20 @@
 Homework
 ========
-1.1 git log develop..develop-feature1 --since="3 hours ago"
+1
+	1)  git log develop..develop-feature1 --since="3 hours ago"
 
-	develop..HEAD - отрезок коммитов, который мы выводим - в данном случае - от точки ветвления develop до последнего коммита - develop-feature1
+		develop..HEAD - отрезок коммитов, который мы выводим - в данном случае - от точки ветвления develop до последнего коммита - develop-feature1
 
-	--since="3 hours ago" - выводим коммиты, которые были сделаны позже, чем 3 часа назад
+		--since="3 hours ago" - выводим коммиты, которые были сделаны позже, чем 3 часа назад
 
 	
+	2) git log develop master --grep=%номер% --format="%cn %cD %s" 
 
-1.2 git log develop master --grep=%номер% --format="%cn %cD %s" 
+	        develop master - указываем ветки, которые будем выводить
 
-    develop master - указываем ветки, которые будем выводить
+		--grep=%номер% - выводим те коммиты, сообщение которых содержит данный номер%
 
-	--grep=%номер% - выводим те коммиты, сообщение которых содержит данный номер%
-
-	--format="%cn %cD %s" - указываем необходимый формат
+		--format="%cn %cD %s" - указываем необходимый формат
 
 
 2. Находясь в develop - git cherry-pick %commit-id в develop-feature1%

@@ -1,6 +1,6 @@
 Homework
 ========
-1
+1.
 	1)  git log develop..develop-feature1 --since="3 hours ago"
 
 		develop..HEAD - отрезок коммитов, который мы выводим - в данном случае - от точки ветвления develop до последнего коммита - develop-feature1
